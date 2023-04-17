@@ -1,0 +1,90 @@
+._products__section {
+    &__wrapper {
+        padding: 8rem 0;
+    }
+
+    &__item {
+        height: 10rem;
+        text-align: center;
+        position: relative;
+        color: $dark-mode-blue;
+        display: grid;
+        justify-content: center;
+        @include text(1.3rem, 700, $Regular);
+
+        button {
+            cursor: pointer;
+        }
+
+        img {
+            margin: 0 auto;
+            width: 10rem;
+            height: 10rem;
+            object-fit: contain;
+        }
+
+        button {
+            top: 0;
+            right: 0;
+            border: unset;
+            background: none;
+        }
+        .btn
+        
+        .btn-div {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            button {
+                min-height: 40px;
+                background-color: #8566aa;
+                color: #fff;
+                border-radius: 5%;
+                border: none;
+                outline: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 30px;
+                padding: 0 15px;
+                cursor: pointer;
+                display: flex;
+                box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+              }
+              
+              button:hover {
+                background-color: #20bf6b;
+              }
+              
+              .todo_style {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+              }
+        }
+
+        .fa-cart-plus {
+            color: #212F63;
+        }
+    }
+
+    &__link {
+        display: block;
+        text-align: center;
+        padding-top: 3.2rem;
+        color: $dark-mode-blue;
+        @include text(1.4rem, 700, $Regular);
+        
+        span {
+            padding-left: 2rem;
+        }
+    }
+}
+

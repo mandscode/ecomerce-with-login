@@ -1,0 +1,28 @@
+._blog__nav {
+    &__container {
+        display: flex;
+        column-gap: 2.3rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        min-height: 5rem;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 2.3rem;
+        
+        &__title {
+            gap: 0.8rem;
+            display: flex;
+            align-items: center;
+            @include text(1.3rem, 500, $Regular);
+        }
+
+        &__items {
+            @include text(1.3rem, 500, $Regular);
+        }
+    }
+}

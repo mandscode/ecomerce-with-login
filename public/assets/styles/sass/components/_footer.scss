@@ -1,0 +1,136 @@
+._footer {
+    background: $great-light;
+
+    &__wrapper {
+        padding: 10.4rem 10rem 4rem;
+    }
+
+    &__grid {
+
+        &__title {
+            @include text(1.4rem, 700, $Regular);
+            color: $cool-gray;
+            line-height: 1.96rem;
+        }
+
+        &__cell {
+
+            &__wrapper {
+                display: grid;
+                row-gap: 1.9rem;
+            }
+
+            &__social {
+                padding: 1.35rem;
+                background: $dark-mode-blue;
+
+                i {
+                    color: #fff;
+                }
+            }
+
+            &__icon{
+                padding: 1.1rem;
+            }
+
+            &__title {
+                color: $cool-gray;
+                line-height: 1.96rem;
+                @include text(1.4rem, 500, $Regular);
+            }
+
+            &__typography {
+                line-height: 1.96rem;
+                color: $dark-mode-blue;
+                @include text(1.4rem, 400, $Regular);
+            }
+
+            &__dropdown {
+                display: flex;
+                column-gap: 1.6rem;
+                align-items: center;
+
+                &.alt__content {
+                    display: grid;
+                    row-gap: 1.6rem;
+                }
+            }
+
+            &__subscribe_form {
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                }
+
+                .form-control {
+                    border: none;
+                    &:focus {
+                      box-shadow: none;
+                    }
+                }
+
+                input {
+                    width: 74%;
+                    height: 4rem;
+                    padding: 1rem 1.6rem;
+                }
+
+                button {
+                    padding: 0.8rem 1.85rem;
+                    border: none;
+                    height: 44px;
+                    background-color: $dark-mode-blue;
+                    color: #fff;
+                    margin: -1px;
+                    border-radius: 0;
+                    text-transform: uppercase;
+                    position: relative;
+                    transition: all ease 0.3s;
+                    -webkit-transition: all ease 0.3s;
+                    -moz-transition: all ease 0.3s;
+                    -o-transition: all ease 0.3s;
+                    -ms-transition: all ease 0.3s;
+                    &:hover, &:focus, &:active, &:visited {
+                      color: #fff;
+                      background-color: rgba(14, 208, 133, 0.77);
+                      outline: none;
+                      transition: all ease 0.3s;
+                      -webkit-transition: all ease 0.3s;
+                      -moz-transition: all ease 0.3s;
+                      -o-transition: all ease 0.3s;
+                      -ms-transition: all ease 0.3s;
+                      &:before {
+                        background-color: rgba(14, 208, 133, 0.77);
+                        transition: all ease 0.3s;
+                        -webkit-transition: all ease 0.3s;
+                        -moz-transition: all ease 0.3s;
+                        -o-transition: all ease 0.3s;
+                        -ms-transition: all ease 0.3s;
+                      }
+                    }
+                    &:before {
+                      content: '';
+                      position: absolute;
+                      top: 100%;
+                      left: 0;
+                      height: 1px;
+                      background-color: #0ed085;
+                      width: 100%;
+                      transition: all ease 0.3s;
+                      -webkit-transition: all ease 0.3s;
+                      -moz-transition: all ease 0.3s;
+                      -o-transition: all ease 0.3s;
+                      -ms-transition: all ease 0.3s;
+                    }
+                }
+
+                .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+                    z-index: 2;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+}

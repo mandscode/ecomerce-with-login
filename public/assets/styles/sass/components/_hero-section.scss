@@ -1,0 +1,22 @@
+._hero__section {
+    width: 100%;
+    min-height: 25rem;
+    background: url(/assets/images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 192rem;
+    margin: 0 auto;
+    
+    &__wrapper {
+        width: 100%;
+        min-height: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        @include text(4rem, 700, $Regular);
+        color: #fff;
+    }
+}

@@ -1,0 +1,117 @@
+._header {
+
+  .nav__secondary {
+    display: flex;
+    min-height: 4rem;
+    align-items: center;
+    background: $approx-whisper;
+  }
+
+  .nav__primary {
+    .nav__menu {
+      min-height: 9rem;
+      align-items: center;
+
+      &__items {
+        align-items: center;
+      }
+    }
+  }
+
+  .nav__menu {
+    display: flex;
+    justify-content: space-between;
+
+    &__items__right {
+      display: flex;
+      column-gap: 3.2rem;
+      justify-content: flex-end;
+    }
+
+    &__link {
+      line-height: 18.2px;
+      color: $dark-shade-blue;
+      @include text(13px, 500, $Regular);
+    }
+
+    &__item {
+      line-height: 16.8px;
+      color: $dark-shade-blue;
+      @include text(12px, 500, $Regular);
+      &:last-child {
+        padding-left: 1.15rem;
+      }
+    }
+    
+    &__items {
+      width: 81rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__icons {
+      display: flex;
+      padding: 1.2rem 0.85rem;
+      background: $approx-whisper;
+      @include text(1.3rem, 500, $Regular);
+
+      svg {
+        &:last-child {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+      }
+
+      &__wrapper {
+        gap: 0.8rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__logo {
+      z-index: 1;
+      
+      img {
+        // width: 13.3rem;
+        height: 6.5rem;
+        object-fit: contain;
+      }
+
+      &_icon {
+        width: 100%;
+        height: 4.5rem;
+      }
+    }
+
+    &_link {
+      color: #0e2431;
+      @include text(1.5rem, 500, $Regular);
+      padding: 0.7rem;
+      
+      &:hover{
+        font-weight: bolder;
+      }
+    }
+
+    &__items_wrapper {
+      left: 0;
+      top: -1rem;
+      height: 100%;
+      width: 100vw;
+      display: flex;
+      padding-top: 120px;
+      position: fixed;
+      text-align: center;
+      padding-left: 50px;
+      flex-direction: column;
+      transform: translate(-150%);
+      transition: transform 0.5s ease-in-out;
+      background: rgba(0, 218, 255, 0.3);
+    }
+    
+    &_item {
+      margin-bottom: 1.2rem;
+    }
+  }
+}

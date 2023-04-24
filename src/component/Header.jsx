@@ -31,10 +31,10 @@ const Search = styled('div')(({ theme }) => ({
 const Header = () => {
 
     const cartItems = useSelector(
-        state => state.cartItems.cartItems
+        state => state.cart
     );
 
-    console.log(cartItems.length)
+    console.log("ccc", cartItems)
 
     const [age, setAge] = React.useState('');
 
@@ -169,7 +169,7 @@ const Header = () => {
                                     <FavoriteBorderIcon/>
                                 </div>
                                 <Link to="/cart" className="nav__menu__icons">
-                                    <span>{cartItems.length}</span>
+                                    <span>{cartItems ? cartItems.length : 0}</span>
                                     <ShoppingCartOutlinedIcon/>
                                 </Link>
                                 <div className="nav__menu__icons">

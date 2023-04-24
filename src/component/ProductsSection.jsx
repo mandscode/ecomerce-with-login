@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { CartProducts, deleteProduct } from "../Redux/Actions/Action";
 import { AddCircleOutline, AddIcCallOutlined, RemoveCircleOutline } from "@mui/icons-material";
+import { addToCart } from "../Redux/Reducers/cartSlice";
 
 
 
@@ -22,7 +22,7 @@ const ProductsSection = () => {
     },[])
 
     const cartItems = useSelector(
-        state => state.cartItems.cartItems
+        state => state.cart
     );
 
     const [count, setCount] = useState(1);
@@ -45,7 +45,7 @@ const ProductsSection = () => {
 
     const cartEvent = (i, product) => {
         const handleAddToCart = () => {
-            dispatch(CartProducts(product))
+            dispatch(addToCart(product))
         };
         const isInCart = cartItems.find((item) => item.id === product.id);
       return (

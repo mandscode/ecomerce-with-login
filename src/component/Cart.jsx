@@ -1,23 +1,24 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addQuantity, deleteProduct } from "../Redux/Actions/Action";
-import { decrement, increment } from "../Redux/Actions/Counter";
+import { removeItem } from "../Redux/Reducers/cartSlice";
 
 const Cart = () => {
     const [items, setItems] = React.useState();
     const [total, setTotal] = React.useState();
     
     const cartItems = useSelector(
-        state => state.cartItems.cartItems
+        state => state.cart
     );
+
+    console.log(cartItems)
         
     const counter = useSelector((state) => state.counter);
 
     const dispatch = useDispatch();
 
     function deleteEvent (i, product) {
-        dispatch(deleteProduct(product))
+        dispatch(removeItem(product))
     }
     
     function sum (a, b) {

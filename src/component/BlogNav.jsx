@@ -16,7 +16,7 @@ const BlogNav = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <a className="_blog__nav__title" href="https://contentsquare.com/blog/">All Products</a>
+                            <a className="_blog__nav__title" href="/home">All Products</a>
                         </div>
                         <nav className="_blog__nav__wrapper" aria-label="Blog topics">
                             <ul className="_blog__nav__list">
